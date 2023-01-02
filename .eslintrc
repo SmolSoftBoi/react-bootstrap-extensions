@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "@react-bootstrap",
+    "4catalyzer-typescript",
+    "prettier",
+    "plugin:react-hooks/recommended"
+  ],
+  "plugins": [
+    "eslint-plugin-tsdoc",
+    "prettier"
+  ],
+  "rules": {
+    "import/extensions": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "tsdoc/syntax": "warn"
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.stories.*"
+      ],
+      "rules": {
+        "import/no-anonymous-default-export": "off"
+      }
+    }
+  ]
+}

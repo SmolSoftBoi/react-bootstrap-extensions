@@ -1,7 +1,17 @@
 export { default as Block } from './Block';
 export type { BlockProps } from './Block';
+export { default as BlockBackground } from './BlockBackground';
+export type { BlockBackgroundProps } from './BlockBackground';
+export { default as BlockForeground } from './BlockForeground';
+export type { BlockForegroundProps } from './BlockForeground';
 export { default as BlockTitle } from './BlockTitle';
 export type { BlockTitleProps } from './BlockTitle';
+export { default as FeaturedList } from './FeaturedList';
+export type { FeaturedListProps } from './FeaturedList';
+export { default as FeaturedListIcon } from './FeaturedListIcon';
+export type { FeaturedListIconProps } from './FeaturedListIcon';
+export { default as IconList } from './IconList';
+export type { IconListProps } from './IconList';
 export { default as PullQuote } from './PullQuote';
 export type { PullQuoteProps } from './PullQuote';
 export { default as StatCard } from './StatCard';

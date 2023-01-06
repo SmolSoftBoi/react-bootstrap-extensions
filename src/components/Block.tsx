@@ -3,6 +3,8 @@ import classNames from 'classnames';
 import { BsPrefixProps, BsPrefixRefForwardingComponent } from 'react-bootstrap/esm/helpers';
 import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
 import PropTypes from 'prop-types';
+import BlockBackground from './BlockBackground';
+import BlockForeground from './BlockForeground';
 import BlockTitle from './BlockTitle';
 
 export interface BlockProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {
@@ -52,5 +54,7 @@ Block.propTypes = propTypes;
 Block.defaultProps = defaultProps;
 
 export default Object.assign(Block, {
+  Background: BlockBackground,
+  Foreground: BlockForeground,
   Title: BlockTitle
 });

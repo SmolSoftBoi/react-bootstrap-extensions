@@ -16,7 +16,7 @@ const FeaturedListIcon: BsPrefixRefForwardingComponent<'div', FeaturedListIconPr
     {
       bsPrefix,
       // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595
-      as: Component = 'ul',
+      as: Component = 'div',
       className,
       ...props
     },

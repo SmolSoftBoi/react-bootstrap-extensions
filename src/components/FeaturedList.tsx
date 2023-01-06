@@ -4,6 +4,7 @@ import { BsPrefixProps, BsPrefixRefForwardingComponent } from 'react-bootstrap/e
 import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
 import PropTypes from 'prop-types';
 import FeaturedListIcon from './FeaturedListIcon';
+import FeaturedListItem from './FeaturedListItem';
 
 export interface FeaturedListProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {};
 
@@ -42,5 +43,6 @@ FeaturedList.propTypes = propTypes;
 FeaturedList.defaultProps = defaultProps;
 
 export default Object.assign(FeaturedList, {
+  Item: FeaturedListItem,
   Icon: FeaturedListIcon
 });

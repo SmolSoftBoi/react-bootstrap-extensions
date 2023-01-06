@@ -10,6 +10,8 @@ export { default as FeaturedList } from './FeaturedList';
 export type { FeaturedListProps } from './FeaturedList';
 export { default as FeaturedListIcon } from './FeaturedListIcon';
 export type { FeaturedListIconProps } from './FeaturedListIcon';
+export { default as FeaturedListItem } from './FeaturedListItem';
+export type { FeaturedListItemProps } from './FeaturedListItem';
 export { default as IconList } from './IconList';
 export type { IconListProps } from './IconList';
 export { default as PullQuote } from './PullQuote';

@@ -8,6 +8,10 @@ import BlockForeground from './BlockForeground';
 import BlockTitle from './BlockTitle';
 
 export interface BlockProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {
+
+  /**
+   * The general visual variant a the Block.
+   */
   variant?: 'dark' | string;
 };
 

@@ -14,6 +14,8 @@ export { default as FeaturedListItem } from './FeaturedListItem';
 export type { FeaturedListItemProps } from './FeaturedListItem';
 export { default as IconList } from './IconList';
 export type { IconListProps } from './IconList';
+export { default as ProfileHeader } from './ProfileHeader';
+export type { ProfileHeaderProps } from './ProfileHeader';
 export { default as PullQuote } from './PullQuote';
 export type { PullQuoteProps } from './PullQuote';
 export { default as StatCard } from './StatCard';

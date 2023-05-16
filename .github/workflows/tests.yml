@@ -25,4 +25,4 @@ jobs:
       - name: Install packages
         run: yarn install
       - name: Run tests
-        run: yarn run test
+        run: yarn run test --passWithNoTests

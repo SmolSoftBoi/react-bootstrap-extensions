@@ -1,6 +1,9 @@
 {
   "name": "@smolpack/react-bootstrap-extensions",
   "version": "0.2.2",
+  "engines": {
+    "node": ">=16"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

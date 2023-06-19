@@ -57,7 +57,7 @@
     "@storybook/addon-links": "^7.0.2",
     "@storybook/addon-mdx-gfm": "^7.0.2",
     "@storybook/node-logger": "^7.0.2",
-    "@storybook/preset-create-react-app": "^7.0.2",
+    "@storybook/preset-create-react-app": "^7.0.22",
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^7.0.2",
     "@storybook/react-webpack5": "^7.0.2",

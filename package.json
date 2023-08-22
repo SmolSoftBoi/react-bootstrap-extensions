@@ -62,7 +62,7 @@
     "@storybook/react": "^7.0.2",
     "@storybook/react-webpack5": "^7.0.2",
     "@storybook/testing-library": "^0.1.0",
-    "@svgr/rollup": "^6.5.1",
+    "@svgr/rollup": "^8.1.0",
     "@types/jest": "^26.0.24",
     "@types/node": "^20.4.1",
     "@types/react": "^18.0.26",

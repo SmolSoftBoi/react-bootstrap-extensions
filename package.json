@@ -73,7 +73,7 @@
     "babel-loader": "^8.3.0",
     "babel-plugin-istanbul": "^6.1.1",
     "babel-plugin-react-docgen": "^4.2.1",
-    "bootstrap": "^5.2.3",
+    "bootstrap": "^5.3.1",
     "chromatic": "^7.1.0",
     "eslint": "^7.32.0",
     "eslint-config-4catalyzer-typescript": "^3.3.0",

@@ -3153,10 +3153,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@smolpack/bootstrap-extensions@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@smolpack/bootstrap-extensions/-/bootstrap-extensions-1.0.0.tgz#8155b6bbf23fb9e8b2ebee5fe9101528540d4381"
-  integrity sha512-6YwVuL3hOFBnx07aa63IkoNMTpWIiuy7vyXDL9GjfvUDsjQjRUE7IbVwT04gFCmT+w7Oh0iBBYleAP1C/3pb2Q==
+"@smolpack/bootstrap-extensions@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@smolpack/bootstrap-extensions/-/bootstrap-extensions-1.1.1.tgz#ff20f7466f8f2673725382531dc146a3bdbbf634"
+  integrity sha512-tsorw198SSx4ycm31DPxNLlWFPE3LtC0eVqkhGKnXNE3WrjmtbUWvFcgNWIL4e6qxF3QB+kV9oDETi2yF3gk9A==
 
 "@storybook/addon-actions@7.4.6", "@storybook/addon-actions@^7.0.23":
   version "7.4.6"

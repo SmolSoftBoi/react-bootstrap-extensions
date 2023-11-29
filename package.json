@@ -74,7 +74,7 @@
     "babel-plugin-istanbul": "^6.1.1",
     "babel-plugin-react-docgen": "^4.2.1",
     "bootstrap": "^5.3.2",
-    "chromatic": "^7.1.0",
+    "chromatic": "^9.1.0",
     "eslint": "^7.32.0",
     "eslint-config-4catalyzer-typescript": "^3.3.0",
     "eslint-import-resolver-node": "^0.3.6",

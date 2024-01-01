@@ -61,7 +61,7 @@
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^7.6.6",
     "@storybook/react-webpack5": "^7.6.3",
-    "@storybook/testing-library": "^0.1.0",
+    "@storybook/testing-library": "^0.2.2",
     "@svgr/rollup": "^8.1.0",
     "@types/jest": "^26.0.24",
     "@types/node": "^20.10.5",

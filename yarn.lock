@@ -2900,12 +2900,24 @@
   resolved "https://registry.yarnpkg.com/@smolpack/bootstrap-extensions/-/bootstrap-extensions-1.1.1.tgz#ff20f7466f8f2673725382531dc146a3bdbbf634"
   integrity sha512-tsorw198SSx4ycm31DPxNLlWFPE3LtC0eVqkhGKnXNE3WrjmtbUWvFcgNWIL4e6qxF3QB+kV9oDETi2yF3gk9A==
 
-"@storybook/addon-actions@7.6.1", "@storybook/addon-actions@^7.0.23":
+"@storybook/addon-actions@7.6.1":
   version "7.6.1"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-7.6.1.tgz#63f9dfd1ce9d0277b9403e110898cedb8f827a9b"
   integrity sha512-KSaIv1LKGyaCJuPuEIwwLtMp/Md8t/jprng3FwYW/lChbsYw40lexiLYRy2LHomsyvXT0acsjLuSmJ8FrynSoA==
   dependencies:
     "@storybook/core-events" "7.6.1"
+    "@storybook/global" "^5.0.0"
+    "@types/uuid" "^9.0.1"
+    dequal "^2.0.2"
+    polished "^4.2.2"
+    uuid "^9.0.0"
+
+"@storybook/addon-actions@^7.6.7":
+  version "7.6.7"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-7.6.7.tgz#2985d5417c65a9a0bce75a487b09bf1d1140b943"
+  integrity sha512-+6EZvhIeKEqG/RNsU3R5DxOrd60BL5GEvmzE2w60s2eKaNNxtyilDjiO1g4z2s2zDNyr7JL/Ft03pJ0Jgo0lew==
+  dependencies:
+    "@storybook/core-events" "7.6.7"
     "@storybook/global" "^5.0.0"
     "@types/uuid" "^9.0.1"
     dequal "^2.0.2"

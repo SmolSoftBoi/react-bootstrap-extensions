@@ -3044,12 +3044,12 @@
     "@storybook/global" "^5.0.0"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-mdx-gfm@^7.6.7":
-  version "7.6.7"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-mdx-gfm/-/addon-mdx-gfm-7.6.7.tgz#8bfe508b1c1327c20b687837acbbae43cfa53eec"
-  integrity sha512-Fs24jbSmfOP7Ykd3tDJIr88qO1GmKdResPkju7bh+MBwFz/Ha6Iztth3mouBPn0Tk+6HfxcCjGAFLtkNMuHeJQ==
+"@storybook/addon-mdx-gfm@^7.6.12":
+  version "7.6.12"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-mdx-gfm/-/addon-mdx-gfm-7.6.12.tgz#e05e6012a9cd79dc0ffcff3203884bb4d5b33c94"
+  integrity sha512-+KWTRcMwzB1S7LAroMHRoMsD1WWpm7qZKOepH41tMDk2jRPHThPwFXHeAbciGx+IOAAXh2SYI47XYhNAgKkOoQ==
   dependencies:
-    "@storybook/node-logger" "7.6.7"
+    "@storybook/node-logger" "7.6.12"
     remark-gfm "^3.0.1"
     ts-dedent "^2.0.0"
 
@@ -3514,15 +3514,15 @@
   resolved "https://registry.yarnpkg.com/@storybook/mdx2-csf/-/mdx2-csf-1.1.0.tgz#97f6df04d0bf616991cc1005a073ac004a7281e5"
   integrity sha512-TXJJd5RAKakWx4BtpwvSNdgTDkKM6RkXU8GK34S/LhidQ5Pjz3wcnqb0TxEkfhK/ztbP8nKHqXFwLfa2CYkvQw==
 
-"@storybook/node-logger@7.6.10", "@storybook/node-logger@^7.6.7":
+"@storybook/node-logger@7.6.10":
   version "7.6.10"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-7.6.10.tgz#d4c52d04384d2728d6610fb0afff6eb1feb50fd4"
   integrity sha512-ZBuqrv4bjJzKXyfRGFkVIi+z6ekn6rOPoQao4KmsfLNQAUUsEdR8Baw/zMnnU417zw5dSEaZdpuwx75SCQAeOA==
 
-"@storybook/node-logger@7.6.7":
-  version "7.6.7"
-  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-7.6.7.tgz#35cee2b3e4d234b0b0735715d8856dc141d4a9b0"
-  integrity sha512-XLih8MxylkpZG9+8tgp8sPGc2tldlWF+DpuAkUv6J3Mc81mPyc3cQKQWZ7Hb+m1LpRGqKV4wyOQj1rC+leVMoQ==
+"@storybook/node-logger@7.6.12", "@storybook/node-logger@^7.6.7":
+  version "7.6.12"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-7.6.12.tgz#2232fc45ca8439649d8cb2cefe38f0a97c1aa275"
+  integrity sha512-iS44/EjfF6hLecKzICmcpQoB9bmVi4tXx5gVXnbI5ZyziBibRQcg/U191Njl7wY2ScN/RCQOr8lh5k57rI3Prg==
 
 "@storybook/postinstall@7.6.10":
   version "7.6.10"

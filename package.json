@@ -8,6 +8,7 @@
     "node": ">=16"
   },
   "dependencies": {
+    "@babel/runtime": "^7.23.9",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.4.3",

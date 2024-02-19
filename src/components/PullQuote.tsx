@@ -1,15 +1,28 @@
 import React from 'react';
 import classNames from 'classnames';
-import { BsPrefixProps, BsPrefixRefForwardingComponent } from 'react-bootstrap/esm/helpers';
+import { BsPrefixProps } from 'react-bootstrap/esm/helpers';
 import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
+import PropTypes from 'prop-types';
 
-export interface PullQuoteProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {};
+export interface PullQuoteProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {
 
-const propTypes = {};
+  /**
+   * The general visual variant a the Pull Quote.
+   */
+  variant?: 'dark' | string;
+};
+
+const propTypes = {
+  
+  /**
+   * The general visual variant a the Pull Quote.
+   */
+  variant: PropTypes.string
+};
 
 const defaultProps: PullQuoteProps = {};
 
-const PullQuote: BsPrefixRefForwardingComponent<'blockquote', PullQuoteProps> = React.forwardRef<HTMLElement, PullQuoteProps>(
+const PullQuote: React.ForwardRefExoticComponent<PullQuoteProps & React.RefAttributes<HTMLElement>> = React.forwardRef<HTMLElement, PullQuoteProps>(
   (
     {
       bsPrefix,

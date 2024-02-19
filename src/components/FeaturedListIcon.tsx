@@ -1,9 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
-import { BsPrefixProps, BsPrefixRefForwardingComponent } from 'react-bootstrap/esm/helpers';
+import { BsPrefixProps } from 'react-bootstrap/esm/helpers';
 import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
-import PropTypes from 'prop-types';
-import BlockTitle from './BlockTitle';
 
 export interface FeaturedListIconProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {};
 
@@ -11,7 +9,7 @@ const propTypes = {};
 
 const defaultProps: FeaturedListIconProps = {};
 
-const FeaturedListIcon: BsPrefixRefForwardingComponent<'div', FeaturedListIconProps> = React.forwardRef<HTMLElement, FeaturedListIconProps>(
+const FeaturedListIcon: React.ForwardRefExoticComponent<FeaturedListIconProps & React.RefAttributes<HTMLElement>> = React.forwardRef<HTMLElement, FeaturedListIconProps>(
   (
     {
       bsPrefix,

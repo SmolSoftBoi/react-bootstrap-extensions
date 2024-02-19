@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { BsPrefixProps, BsPrefixRefForwardingComponent } from 'react-bootstrap/esm/helpers';
+import { BsPrefixProps } from 'react-bootstrap/esm/helpers';
 import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
 
 export interface BlockBackgroundProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {};
@@ -9,7 +9,7 @@ const propTypes = {};
 
 const defaultProps: BlockBackgroundProps = {};
 
-const BlockBackground: BsPrefixRefForwardingComponent<'div', BlockBackgroundProps> = React.forwardRef<HTMLElement, BlockBackgroundProps>(
+const BlockBackground: React.ForwardRefExoticComponent<BlockBackgroundProps & React.RefAttributes<HTMLElement>> = React.forwardRef<HTMLElement, BlockBackgroundProps>(
   (
     {
       bsPrefix,

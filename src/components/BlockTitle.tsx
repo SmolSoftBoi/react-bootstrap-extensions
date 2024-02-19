@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { BsPrefixProps, BsPrefixRefForwardingComponent } from 'react-bootstrap/esm/helpers';
+import { BsPrefixProps } from 'react-bootstrap/esm/helpers';
 import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
 
 export interface BlockTitleProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {};
@@ -9,7 +9,7 @@ const propTypes = {};
 
 const defaultProps: BlockTitleProps = {};
 
-const BlockTitle: BsPrefixRefForwardingComponent<'h1', BlockTitleProps> = React.forwardRef<HTMLElement, BlockTitleProps>(
+const BlockTitle: React.ForwardRefExoticComponent<BlockTitleProps & React.RefAttributes<HTMLElement>> = React.forwardRef<HTMLElement, BlockTitleProps>(
   (
     {
       bsPrefix,

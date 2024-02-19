@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { BsPrefixProps, BsPrefixRefForwardingComponent } from 'react-bootstrap/esm/helpers';
+import { BsPrefixProps } from 'react-bootstrap/esm/helpers';
 import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
 
 export interface ProfileHeaderProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {};
@@ -9,7 +9,7 @@ const propTypes = {};
 
 const defaultProps: ProfileHeaderProps = {};
 
-const ProfileHeader: BsPrefixRefForwardingComponent<'div', ProfileHeaderProps> = React.forwardRef<HTMLElement, ProfileHeaderProps>(
+const ProfileHeader: React.ForwardRefExoticComponent<ProfileHeaderProps & React.RefAttributes<HTMLElement>> = React.forwardRef<HTMLElement, ProfileHeaderProps>(
   (
     {
       bsPrefix,

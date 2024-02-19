@@ -25,7 +25,7 @@ const propTypes = {
 
 const defaultProps: BlockProps = {};
 
-const Block: BsPrefixRefForwardingComponent<'div', BlockProps> = React.forwardRef<HTMLElement, BlockProps>(
+const Block: React.ForwardRefExoticComponent<BlockProps & React.RefAttributes<HTMLElement>> = React.forwardRef<HTMLElement, BlockProps>(
   (
     {
       bsPrefix,

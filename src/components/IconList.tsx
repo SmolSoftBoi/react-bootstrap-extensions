@@ -1,8 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
-import { BsPrefixProps, BsPrefixRefForwardingComponent } from 'react-bootstrap/esm/helpers';
+import { BsPrefixProps } from 'react-bootstrap/esm/helpers';
 import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
-import PropTypes from 'prop-types';
 
 export interface IconListProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {};
 
@@ -10,7 +9,7 @@ const propTypes = {};
 
 const defaultProps: IconListProps = {};
 
-const IconList: BsPrefixRefForwardingComponent<'ul', IconListProps> = React.forwardRef<HTMLElement, IconListProps>(
+const IconList: React.ForwardRefExoticComponent<IconListProps & React.RefAttributes<HTMLElement>> = React.forwardRef<HTMLElement, IconListProps>(
   (
     {
       bsPrefix,

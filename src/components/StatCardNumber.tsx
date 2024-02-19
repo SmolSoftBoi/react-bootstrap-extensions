@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { BsPrefixProps, BsPrefixRefForwardingComponent } from 'react-bootstrap/esm/helpers';
+import { BsPrefixProps } from 'react-bootstrap/esm/helpers';
 import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
 
 export interface StatCardNumberProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {};
@@ -9,7 +9,7 @@ const propTypes = {};
 
 const defaultProps: StatCardNumberProps = {};
 
-const StatCardNumber: BsPrefixRefForwardingComponent<'h3', StatCardNumberProps> = React.forwardRef<HTMLElement, StatCardNumberProps>(
+const StatCardNumber: React.ForwardRefExoticComponent<StatCardNumberProps & React.RefAttributes<HTMLElement>> = React.forwardRef<HTMLElement, StatCardNumberProps>(
   (
     {
       bsPrefix,

@@ -1,9 +1,5 @@
 import React from 'react';
-import classNames from 'classnames';
-import { BsPrefixProps, BsPrefixRefForwardingComponent } from 'react-bootstrap/esm/helpers';
-import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
-import PropTypes from 'prop-types';
-import BlockTitle from './BlockTitle';
+import { BsPrefixProps } from 'react-bootstrap/esm/helpers';
 
 export interface FeaturedListItemProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {};
 
@@ -11,7 +7,7 @@ const propTypes = {};
 
 const defaultProps: FeaturedListItemProps = {};
 
-const FeaturedListItem: BsPrefixRefForwardingComponent<'li', FeaturedListItemProps> = React.forwardRef<HTMLElement, FeaturedListItemProps>(
+const FeaturedListItem: React.ForwardRefExoticComponent<FeaturedListItemProps & React.RefAttributes<HTMLElement>> = React.forwardRef<HTMLElement, FeaturedListItemProps>(
   (
     {
       // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595

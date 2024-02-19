@@ -1,7 +1,6 @@
 import babel from '@rollup/plugin-babel';
 import postcss from 'rollup-plugin-postcss'
 import autoExternal from 'rollup-plugin-auto-external';
-import pkg from './package.json';
 import visualizer from 'rollup-plugin-visualizer';
 import del from 'rollup-plugin-delete';
 import image from '@rollup/plugin-image'
@@ -9,12 +8,13 @@ import resolve from '@rollup/plugin-node-resolve';
 import {terser} from 'rollup-plugin-terser';
 import typescript from '@rollup/plugin-typescript';
 import svgr from '@svgr/rollup'
+import pkg from './package.json';
 
 const config = [
     {
         input: pkg.source,
         output: [
-            { file: pkg.main, format: 'cjs' }
+            { dir: 'dist', format: 'cjs', sourcemap: true }
         ],
         plugins: [
             resolve({

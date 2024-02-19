@@ -10,7 +10,6 @@
     "allowJs": true,
     "outDir": "dist",
     "declaration": true,
-    "declarationDir": "src",
     "skipLibCheck": true,
     "esModuleInterop": true,
     "emitDeclarationOnly": true,

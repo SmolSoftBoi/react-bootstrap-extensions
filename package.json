@@ -1,6 +1,9 @@
 {
   "name": "@smolpack/react-bootstrap-extensions",
-  "version": "0.3.0",
+  "version": "0.4.0",
+  "files": [
+    "dist"
+  ],
   "engines": {
     "node": ">=16"
   },
@@ -8,13 +11,16 @@
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.4.3",
+    "cherry-pick": "^0.5.0",
     "classnames": "^2.3.2",
+    "cpy-cli": "^5.0.0",
     "prop-types": "^15.8.1"
   },
   "scripts": {
     "start": "storybook dev -p 6006",
-    "build": "rollup -c --exports auto",
+    "build": "node tools/build.js",
     "build-storybook": "storybook build",
+    "build-types": "tsc -d --emitDeclarationOnly --outDir types",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext tsx --ext ts src",
@@ -34,22 +40,19 @@
       "last 1 safari version"
     ]
   },
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
   "source": "src/index.ts",
-  "types": "dist/src/index.d.ts",
+  "types": "dist/esm/index.d.ts",
   "devDependencies": {
     "@4c/rollout": "^4.0.2",
     "@4c/tsconfig": "^0.4.1",
+    "@babel/cli": "^7.23.9",
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.23.8",
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
     "@react-bootstrap/babel-preset": "^2.2.0",
     "@react-bootstrap/eslint-config": "^3.0.0",
-    "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-image": "^3.0.3",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-typescript": "^11.1.6",
     "@smolpack/bootstrap-extensions": "^1.1.1",
     "@storybook/addon-actions": "^7.6.7",
     "@storybook/addon-essentials": "^7.6.10",
@@ -63,7 +66,6 @@
     "@storybook/react": "^7.6.6",
     "@storybook/react-webpack5": "^7.6.10",
     "@storybook/testing-library": "^0.2.2",
-    "@svgr/rollup": "^8.1.0",
     "@types/jest": "^26.0.24",
     "@types/node": "^20.10.6",
     "@types/react": "^18.2.45",
@@ -93,12 +95,6 @@
     "react-docgen": "^7.0.3",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "rollup": "^2.56.3",
-    "rollup-plugin-auto-external": "^2.0.0",
-    "rollup-plugin-delete": "^2.0.0",
-    "rollup-plugin-postcss": "^4.0.1",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-visualizer": "^5.9.2",
     "sass": "^1.69.5",
     "storybook": "^7.6.10",
     "typescript": "^5.3.3"

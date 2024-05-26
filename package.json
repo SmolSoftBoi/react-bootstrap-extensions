@@ -18,6 +18,7 @@
     "prop-types": "^15.8.1"
   },
   "scripts": {
+    "bootstrap": "yarn --network-timeout 100000 && yarn --cwd www --network-timeout 100000",
     "start": "storybook dev -p 6006",
     "build": "node tools/build.js",
     "build-storybook": "storybook build",

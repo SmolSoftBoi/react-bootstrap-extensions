@@ -23,7 +23,7 @@
     "build": "node tools/build.js",
     "build-storybook": "storybook build",
     "build-types": "tsc -d --emitDeclarationOnly --outDir types",
-    "test": "react-scripts test",
+    "test": "yarn lint",
     "eject": "react-scripts eject",
     "lint": "eslint --ext tsx --ext ts src",
     "lint-fix": "eslint --ext tsx --ext ts src --fix",

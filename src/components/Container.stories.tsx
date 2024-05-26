@@ -1,18 +1,20 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
 import Container from "./Container";
 
-const meta: ComponentMeta<typeof Container> = {
+const meta: Meta<typeof Container> = {
   title: 'Container',
   component: Container
 };
 
-export const Template: ComponentStory<typeof Container> = (args) => (
-  <Container {...args}>
-    <Container contentMiddle>Vertically centered content.</Container>
-  </Container>
-)
+export const Template: StoryObj<typeof Container> = {
+  render: (args) => (
+    <Container {...args}>
+      <Container contentMiddle>Vertically centered content.</Container>
+    </Container>
+  )
+}
+
 Template.args = {
   fillHeight: true
 }

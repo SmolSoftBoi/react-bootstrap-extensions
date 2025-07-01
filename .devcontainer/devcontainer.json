@@ -1,0 +1,19 @@
+{
+  "name": "React Bootstrap Extensions",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18",
+      "nodeGypDependencies": true
+    }
+  },
+  "postCreateCommand": "corepack enable && yarn install --immutable",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
+

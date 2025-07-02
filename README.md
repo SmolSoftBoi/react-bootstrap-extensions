@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) **18+**
+- [Node.js](https://nodejs.org/) **18+** (LTS)
 - Install dependencies with `yarn install` before running scripts.
 
 ## Available Scripts

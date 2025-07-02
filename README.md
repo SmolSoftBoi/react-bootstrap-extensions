@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) **18+**
+- Install dependencies with `yarn install` before running scripts.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -16,7 +21,7 @@ You may also see any lint errors in the console.
 
 ### `yarn test`
 
-Lints.
+Runs lint checks.
 
 ### `yarn build`
 

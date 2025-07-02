@@ -2,7 +2,7 @@
 
 ## 🛠️ Tooling
 - **Package manager:** Yarn (`yarn install` before every run).
-- **Node version:** ≥ 16 LTS (check `.nvmrc` if present).
+- **Node version:** ≥ 18 LTS (check `.nvmrc` if present).
 - **Build:** `yarn build` → outputs CJS, ESM & UMD bundles to `dist/`.
 - **Storybook dev:** `yarn start` (port 6006).
 

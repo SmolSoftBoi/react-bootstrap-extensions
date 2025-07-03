@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) **18+** (LTS)
+- Yarn classic **1.x** as the package manager
 - Install dependencies with `yarn install` before running scripts.
 
 ## Available Scripts

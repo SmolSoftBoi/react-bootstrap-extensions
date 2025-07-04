@@ -25,6 +25,7 @@ jobs:
         with:
           node-version: 18.x
           cache: yarn
+      - run: corepack enable && yarn --version
       - name: Update Brew (macOS)
         if: matrix.os == 'macOS-latest'
         run: brew update

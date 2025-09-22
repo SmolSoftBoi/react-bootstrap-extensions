@@ -107,7 +107,7 @@
     "react-scripts": "5.0.1",
     "sass": "^1.69.5",
     "sass-loader": "^12.6.0",
-    "storybook": "^7.6.10",
+    "storybook": "^9.1.7",
     "style-loader": "^3.3.4",
     "typescript": "^5.3.3",
     "webpack": "^5.91.0"

@@ -1,22 +1,32 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-webpack5';
 
 import Container from "./Container";
 
 const meta: Meta<typeof Container> = {
   title: 'Container',
-  component: Container
+  component: Container,
+  argTypes: {
+    fillHeight: {
+      control: 'boolean',
+      description: 'Adds `container-fill-height` to stretch vertically.'
+    },
+    contentMiddle: {
+      control: 'boolean',
+      description: 'Adds `container-content-middle` to center children.'
+    }
+  }
 };
 
-export const Template: StoryObj<typeof Container> = {
+export const Playground: StoryObj<typeof Container> = {
+  args: {
+    fillHeight: true,
+    contentMiddle: true
+  },
   render: (args) => (
     <Container {...args}>
       <Container contentMiddle>Vertically centered content.</Container>
     </Container>
   )
-}
-
-Template.args = {
-  fillHeight: true
 }
 
 export default meta;

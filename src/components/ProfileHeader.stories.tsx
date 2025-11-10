@@ -1,16 +1,32 @@
 import { Container, Image, Nav } from 'react-bootstrap';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-webpack5';
 
 import ProfileHeader from './ProfileHeader';
 
 const meta: Meta<typeof ProfileHeader> = {
   title: 'ProfileHeader',
-  component: ProfileHeader
+  component: ProfileHeader,
+  argTypes: {
+    className: {
+      control: 'text',
+      description: 'Utility classes applied to the header wrapper.'
+    },
+    style: {
+      control: 'object',
+      description: 'Inline styles applied to the header wrapper.'
+    }
+  }
 };
 
-export const Template: StoryObj<typeof ProfileHeader> = {
+export const Playground: StoryObj<typeof ProfileHeader> = {
+  args: {
+    className: 'text-center',
+    style: {
+      backgroundImage: 'url(https://smolsoftboi.github.io/bootstrap-extensions/docs/assets/img/examples/iceland.jpg)'
+    }
+  },
   render: (args) => (
-    <ProfileHeader className="text-center" {...args}>
+    <ProfileHeader {...args}>
       <Container fluid>
         <div className="container-inner">
           <Image className="rounded-circle media-object" src="https://smolsoftboi.github.io/bootstrap-extensions/docs/assets/img/examples/avatar-dhg.png" alt="Dave Gamache avatar" />
@@ -33,12 +49,6 @@ export const Template: StoryObj<typeof ProfileHeader> = {
       </nav>
     </ProfileHeader>
   )
-}
-
-Template.args = {
-  style: {
-    backgroundImage: `url(https://smolsoftboi.github.io/bootstrap-extensions/docs/assets/img/examples/iceland.jpg)`
-  }
 }
 
 export default meta;

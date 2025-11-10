@@ -245,7 +245,6 @@ Full tech stack [here](/techstack.md)
 |[@babel/preset-typescript](https://www.npmjs.com/@babel/preset-typescript)|v7.23.3|01/08/24|dependabot[bot] |MIT|N/A|
 |[@rollup/plugin-node-resolve](https://www.npmjs.com/@rollup/plugin-node-resolve)|v11.2.1|01/01/24|dependabot[bot] |MIT|N/A|
 |[@storybook/addon-actions](https://www.npmjs.com/@storybook/addon-actions)|v7.6.1|01/08/24|dependabot[bot] |MIT|N/A|
-|[@storybook/addon-knobs](https://www.npmjs.com/@storybook/addon-knobs)|v7.0.2|01/08/24|dependabot[bot] |MIT|N/A|
 |[@storybook/addon-links](https://www.npmjs.com/@storybook/addon-links)|v7.6.7|01/08/24|dependabot[bot] |MIT|N/A|
 |[@storybook/react](https://www.npmjs.com/@storybook/react)|v7.6.3|01/08/24|dependabot[bot] |MIT|N/A|
 |[@svgr/rollup](https://www.npmjs.com/@svgr/rollup)|v8.1.0|10/30/23|dependabot[bot] |MIT|N/A|

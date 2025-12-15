@@ -11,18 +11,31 @@ on:
 jobs:
   job:
     runs-on: ${{ matrix.os }}
+    permissions:
+      contents: read
     strategy:
       matrix:
         os: ["ubuntu-latest", "macos-latest", "windows-latest"]
         node: ["20", "22", "24"]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Setup node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
-          cache: "yarn"
       - run: corepack enable && yarn --version
+      - name: Resolve Yarn cache dir
+        id: yarn-cache
+        shell: bash
+        run: echo "dir=$(yarn cache dir)" >> "$GITHUB_OUTPUT"
+      - name: Yarn cache
+        uses: actions/cache@v4
+        continue-on-error: true
+        with:
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
       - name: Install packages
         run: yarn install
       - name: Run tests

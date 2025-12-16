@@ -11094,7 +11094,7 @@ react-docgen@^5.0.0:
     node-dir "^0.1.10"
     strip-indent "^3.0.0"
 
-react-docgen@^7.0.3, react-docgen@^7.1.1:
+react-docgen@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/react-docgen/-/react-docgen-7.1.1.tgz#a7a8e6b923a945acf0b7325a889ddd74fec74a63"
   integrity sha512-hlSJDQ2synMPKFZOsKo9Hi8WWZTC7POR8EmWvTSjow+VDgKzkmjQvFm2fk0tmRw+f0vTOIYKlarR0iL4996pdg==

@@ -7,6 +7,12 @@
       "dom.iterable",
       "esnext"
     ],
+    "types": [
+      "node",
+      "react",
+      "react-dom",
+      "jest"
+    ],
     "allowJs": true,
     "outDir": "dist",
     "declaration": true,

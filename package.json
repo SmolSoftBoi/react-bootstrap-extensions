@@ -96,7 +96,7 @@
     "react-docgen": "^8.0.2",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "sass": "^1.69.5",
+    "sass": "^1.97.1",
     "storybook": "^10.1.10",
     "typescript": "^5.3.3"
   },

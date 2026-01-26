@@ -58,7 +58,7 @@
     "@react-bootstrap/babel-preset": "^2.2.0",
     "@react-bootstrap/eslint-config": "^3.0.0",
     "@smolpack/bootstrap-extensions": "^1.1.1",
-    "@storybook/addon-docs": "^10.0.6",
+    "@storybook/addon-docs": "^10.1.11",
     "@storybook/addon-links": "^10.1.10",
     "@storybook/preset-create-react-app": "^10.0.6",
     "@storybook/preset-scss": "^1.0.3",

@@ -2243,10 +2243,10 @@
   resolved "https://registry.yarnpkg.com/@storybook/icons/-/icons-2.0.1.tgz#1bd351db1d33bfccbbafa7b64fb413168f1a6616"
   integrity sha512-/smVjw88yK3CKsiuR71vNgWQ9+NuY2L+e8X7IMrFjexjm6ZR8ULrV2DRkTA61aV6ryefslzHEGDInGpnNeIocg==
 
-"@storybook/preset-create-react-app@^10.0.6":
-  version "10.1.9"
-  resolved "https://registry.yarnpkg.com/@storybook/preset-create-react-app/-/preset-create-react-app-10.1.9.tgz#2aab50c42b280dc9bc0bea905e875f898ed79603"
-  integrity sha512-j0HAi8Zw2oz+0mLKKbmXUVWX1RrBVguvo8OxZPuHjGP14j+R+dhofwU5wrPZQ/mvDmANJrFBcqj3AgQjmyBy5w==
+"@storybook/preset-create-react-app@^10.1.11":
+  version "10.1.11"
+  resolved "https://registry.yarnpkg.com/@storybook/preset-create-react-app/-/preset-create-react-app-10.1.11.tgz#0a40f2f885733f1d25b4e131f51125f95fa3ac8b"
+  integrity sha512-F/xOgij/T68MNg2ndOUuot2mTEQef2ZXU3uP7r8T2yaxnAwHCpneqeOsrLYTShaYpqSsjP08pu5/hOTLM6Kz2Q==
   dependencies:
     "@pmmmwh/react-refresh-webpack-plugin" "^0.5.1"
     "@storybook/react-docgen-typescript-plugin" "1.0.6--canary.9.0c3f3b7.0"

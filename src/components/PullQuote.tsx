@@ -10,10 +10,11 @@ export interface PullQuoteProps extends React.HTMLAttributes<HTMLElement>, BsPre
    * The general visual variant a the Pull Quote.
    */
   variant?: 'dark' | string;
+  as?: React.ElementType;
 };
 
 const propTypes = {
-  
+
   /**
    * The general visual variant a the Pull Quote.
    */

@@ -5,7 +5,9 @@ import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
 import FeaturedListIcon from './FeaturedListIcon';
 import FeaturedListItem from './FeaturedListItem';
 
-export interface FeaturedListProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {};
+export interface FeaturedListProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {
+  as?: React.ElementType;
+};
 
 const propTypes = {};
 

@@ -3,7 +3,9 @@ import classNames from 'classnames';
 import { BsPrefixProps } from 'react-bootstrap/esm/helpers';
 import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
 
-export interface BlockBackgroundProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {};
+export interface BlockBackgroundProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {
+  as?: React.ElementType;
+};
 
 const propTypes = {};
 

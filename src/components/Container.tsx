@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContainerProps as BsContainerProps } from "react-bootstrap";
+import { Container as BsContainer, ContainerProps as BsContainerProps } from "react-bootstrap";
 import classNames from 'classnames';
 import { BsPrefixProps } from "react-bootstrap/esm/helpers";
 import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
@@ -16,6 +16,7 @@ export interface ContainerProps extends BsContainerProps, BsPrefixProps {
    * Content middle.
    */
   contentMiddle?: boolean;
+  as?: React.ElementType;
 }
 
 const propTypes = {
@@ -37,6 +38,7 @@ const Container: React.ForwardRefExoticComponent<ContainerProps & React.RefAttri
   (
     {
       bsPrefix,
+      as: Component = 'div',
       className,
       fillHeight,
       contentMiddle,
@@ -47,7 +49,8 @@ const Container: React.ForwardRefExoticComponent<ContainerProps & React.RefAttri
     bsPrefix = useBootstrapPrefix(bsPrefix, 'container');
 
     return (
-      <Container
+      <BsContainer
+        as={Component}
         ref={ref}
         {...props}
         className={classNames(

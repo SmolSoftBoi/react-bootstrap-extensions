@@ -1,7 +1,9 @@
 import React from 'react';
 import { BsPrefixProps } from 'react-bootstrap/esm/helpers';
 
-export interface FeaturedListItemProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {};
+export interface FeaturedListItemProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {
+  as?: React.ElementType;
+};
 
 const propTypes = {};
 

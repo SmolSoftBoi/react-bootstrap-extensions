@@ -13,6 +13,7 @@ export interface BlockProps extends React.HTMLAttributes<HTMLElement>, BsPrefixP
    * The general visual variant a the Block.
    */
   variant?: 'dark' | string;
+  as?: React.ElementType;
 };
 
 const propTypes = {

@@ -5,7 +5,9 @@ import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
 import StatCardDesc from './StatCardDesc';
 import StatCardNumber from './StatCardNumber';
 
-export interface StatCardProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {};
+export interface StatCardProps extends React.HTMLAttributes<HTMLElement>, BsPrefixProps {
+  as?: React.ElementType;
+};
 
 const propTypes = {};
 

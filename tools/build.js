@@ -25,19 +25,35 @@ const step = (name, fn) => async () => {
   console.log(cyan('Built: ') + green(name));
 };
 
-const shell = (cmd) =>
-  execa(cmd, { stdio: ['pipe', 'pipe', 'inherit'], shell: true });
+const run = (command, args = []) =>
+  execa(command, args, { stdio: ['pipe', 'pipe', 'inherit'] });
 
 const has = (t) => !targets.length || targets.includes(t);
 
-const buildTypes = step('generating .d.ts', () => shell(`yarn build-types`));
+const buildTypes = step('generating .d.ts', () => run('yarn', ['build-types']));
 
-const copyTypes = (dest) => shell(`cpy ${typesRoot}/*.d.ts ${dest}`);
+const copyTypes = async (dest) => {
+  const entries = fse.readdirSync(typesRoot);
+  const dtsFiles = entries.filter((name) => name.endsWith('.d.ts'));
+
+  await Promise.all(
+    dtsFiles.map((name) =>
+      fse.copy(path.join(typesRoot, name), path.join(dest, name)),
+    ),
+  );
+};
 
 const babel = (outDir, envName) =>
-  shell(
-    `yarn babel ${srcRoot} -x .es6,.js,.es,.jsx,.mjs,.ts,.tsx --out-dir ${outDir} --env-name "${envName}"`,
-  );
+  run('yarn', [
+    'babel',
+    srcRoot,
+    '-x',
+    '.es6,.js,.es,.jsx,.mjs,.ts,.tsx',
+    '--out-dir',
+    outDir,
+    '--env-name',
+    envName,
+  ]);
 
 /**
  * Run babel over the src directory and output

@@ -2262,10 +2262,10 @@
     react-dom "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-links@^10.1.11":
-  version "10.1.11"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-10.1.11.tgz#777c119003e0aaf925d3166e40daec45f8090a8b"
-  integrity sha512-PEC+Fn3fyBOlMlCcLX+AUunrQMcH7MEfiFtPkp7QnjfMGwBIyzCjgVxM2OyKyIslQnB1So1pY98uTI26fXz/yg==
+"@storybook/addon-links@^10.2.10":
+  version "10.2.10"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-10.2.10.tgz#2797bc650f37805586474cf0175ee8ec4888954e"
+  integrity sha512-oo9Xx4/2OVJtptXKpqH4ySri7ZuBdiSOXlZVGejEfLa0Jeajlh/KIlREpGvzPPOqUVT7dSddWzBjJmJUyQC3ew==
   dependencies:
     "@storybook/global" "^5.0.0"
 
@@ -2370,11 +2370,6 @@
   version "10.1.11"
   resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-10.1.11.tgz#8921d4fe0f579bd1f451d54ae4a9a9d71d1d5a3c"
   integrity sha512-o8WPhRlZbORUWG9lAgDgJP0pi905VHJUFJr1Kp8980gHqtlemtnzjPxKy5vFwj6glNhAlK8SS8OOYzWP7hloTQ==
-
-"@storybook/react-dom-shim@10.1.9":
-  version "10.1.9"
-  resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-10.1.9.tgz#8936ec3cb9a1111abf8c8cef1c6d488f4b52c792"
-  integrity sha512-gJsR6fI1gG4DSin6sQx8RmGDQF8Lije0cZbxHyVedNleBsveGXIPFUKFVi+pRNdwBPni1Z2g/gYyHzkOEqPD2w==
 
 "@storybook/react-webpack5@^10.1.11":
   version "10.1.11"

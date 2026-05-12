@@ -2371,11 +2371,6 @@
   resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-10.1.11.tgz#8921d4fe0f579bd1f451d54ae4a9a9d71d1d5a3c"
   integrity sha512-o8WPhRlZbORUWG9lAgDgJP0pi905VHJUFJr1Kp8980gHqtlemtnzjPxKy5vFwj6glNhAlK8SS8OOYzWP7hloTQ==
 
-"@storybook/react-dom-shim@10.1.9":
-  version "10.1.9"
-  resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-10.1.9.tgz#8936ec3cb9a1111abf8c8cef1c6d488f4b52c792"
-  integrity sha512-gJsR6fI1gG4DSin6sQx8RmGDQF8Lije0cZbxHyVedNleBsveGXIPFUKFVi+pRNdwBPni1Z2g/gYyHzkOEqPD2w==
-
 "@storybook/react-webpack5@^10.1.11":
   version "10.1.11"
   resolved "https://registry.yarnpkg.com/@storybook/react-webpack5/-/react-webpack5-10.1.11.tgz#bfc288763f1fefbec12b48e43bfe69328ca7ddfc"
@@ -7675,7 +7670,7 @@ immer@^9.0.7:
   resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.21.tgz#1e025ea31a40f24fb064f1fef23e931496330176"
   integrity sha512-bc4NBHqOqSfRW7POMkHd51LvClaeMXpm8dx0e8oE2GORbq5aRK7Bxl4FyzVLdGtLmvLKL7BTDBG5ACQm4HWjTA==
 
-immutable@^5.0.2:
+immutable@^5.1.5:
   version "5.1.5"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-5.1.5.tgz#93ee4db5c2a9ab42a4a783069f3c5d8847d40165"
   integrity sha512-t7xcm2siw+hlUM68I+UEOK+z84RzmN59as9DZ7P1l0994DKUWV7UXBMQZVxaoMSRQ+PBZbHCOoBt7a2wxOMt+A==
@@ -11918,13 +11913,13 @@ sass-loader@^12.3.0:
     klona "^2.0.4"
     neo-async "^2.6.2"
 
-sass@^1.97.1:
-  version "1.97.1"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.97.1.tgz#f36e492baf8ccdd08d591b58d3d8b53ea35ab905"
-  integrity sha512-uf6HoO8fy6ClsrShvMgaKUn14f2EHQLQRtpsZZLeU/Mv0Q1K5P0+x2uvH6Cub39TVVbWNSrraUhDAoFph6vh0A==
+sass@^1.99.0:
+  version "1.99.0"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.99.0.tgz#ff9d1594da4886249dfaafabbeea2dea2dc74b26"
+  integrity sha512-kgW13M54DUB7IsIRM5LvJkNlpH+WhMpooUcaWGFARkF1Tc82v9mIWkCbCYf+MBvpIUBSeSOTilpZjEPr2VYE6Q==
   dependencies:
     chokidar "^4.0.0"
-    immutable "^5.0.2"
+    immutable "^5.1.5"
     source-map-js ">=0.6.2 <2.0.0"
   optionalDependencies:
     "@parcel/watcher" "^2.4.1"
